@@ -31,7 +31,15 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    z-index: 9;
+    width: 100%;
 }
+
+main {
+    padding-top: 148px;
+}
+
 
 .pg-padding {
     padding: 30px 50px;
@@ -43,6 +51,7 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+
 /* Classes */
 
 .feature {
@@ -52,6 +61,7 @@ body {
     display: grid;
     grid-template-columns: 3fr 2fr 1fr;
     grid-gap: 50px;
+    position: relative;
 }
 
 .gold-bkg {
@@ -99,12 +109,15 @@ body {
 
 .scooter:hover {
     transform: rotate(30deg);
-    
+
 }
 
 .button-gold {
     background: var(--gold, #FFBC61);
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
 }
 
 .button-gold:hover {
